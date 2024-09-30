@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}خانه{% endblock %}
+
+
+{% block content %}
+
+    <div class="container-fluid p-3" id="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 mt-3">
+                    {% include "partials/slider.html" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-3 bg-secondary" id="products">
+        <div class="container">
+            <div class="row my-5">
+                {% for product in other_products %}
+                    {% include "partials/product_card.html" with product=product %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 bg-warning" id="description">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12 col-md-10 offset-md-1 mt-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <h4>
+                                    <i class="bi bi-check-lg"></i>
+                                    <span>فروش به صورت عمده و رسمی می‌باشد</span>
+                                </h4>
+                                <h4>
+                                    <i class="bi bi-check-lg"></i>
+                                    <span>فاکتور به صورت رسمی می‌باشد و به اداره مالیات ارسال می‌گردد</span>
+                                </h4>
+                                <h4>
+                                    <i class="bi bi-check-lg"></i>
+                                    <span>قیمت‌ها به روز می‌باشد و جهت استعلام پیام بدهید:</span>
+                                </h4>
+                                <div style="text-align: center;">
+                                    <a target="_blank" href="https://t.me/carpetsaroogh" class="btn btn-outline-primary btn-lg me-5">
+                                        <i class="bi bi-telegram"></i>
+                                        <span>تلگرام</span>
+                                    </a>
+                                    <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=ehsan.gh69@gmail.com&su=SUBJECT&body=BODY" 
+                                        class="btn btn-outline-danger btn-lg">
+                                        <i class="bi bi-google"></i>
+                                        <span>ایمیل</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="card-text pt-2 h5">
+                                مدارک لازم برای خرید عمده:
+                            </p>
+                            <p class="card-text pt-2 h5">
+                                ۱ - جواز
+                            </p>
+                            <p class="card-text pt-2 h5">
+                                2 - مدارک شناسایی (کارت ملی + شناسنامه)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+

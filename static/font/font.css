@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Vazir';
+	src: url('Vazir.woff2') format('woff2'),
+		/* Modern Browsers */
+		url('Vazir.ttf') format('truetype');
+	/* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+body {
+    font-family: 'Vazir' !important;
+}
+

@@ -1,0 +1,18 @@
+{% load static %}
+
+<div class="col-6 col-md-4 col-lg-3 mt-3">
+    <div class="card">
+        <a target="_blank" href="https://t.me/carpetsaroogh" style="all: unset; cursor: pointer;">
+            <img src="{{ product.product_img.url }}" class="card-img-top" alt="{{ product.title }}">
+        </a>
+        <div class="card-body" style="text-align: center;">
+            <a target="_blank" href="https://t.me/carpetsaroogh" style="all: unset; cursor: pointer;">
+                <h5 class="card-title">{{ product.title }}</h5>
+            </a>
+            <p class="card-text pt-2 border-top">
+                <span>قیمت : </span>
+                <span>{{ product.price }}</span>
+            </p>
+        </div>
+    </div>
+</div>
